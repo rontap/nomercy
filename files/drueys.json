@@ -1,0 +1,7 @@
+
+    {
+        "cards" : [1],
+        "currPlayer" : 0,
+        "currCoins": 0,
+        "excludedCards" : []
+    }

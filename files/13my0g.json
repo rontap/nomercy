@@ -1,0 +1,8 @@
+
+    {
+        "cards" : [],
+        "currPlayer" : "[object HTMLInputElement]",
+        "currCoinsOnCard": 0,
+        "excludedCards" : [],
+        "hasGameStarted" : false
+    }

@@ -1,0 +1,8 @@
+
+    {
+        "cards" : [26,31,9,18,28,27,13,30,7,12,20,17,35,6,3,19,29,4,34,10,33,15,14,8],
+        "currPlayer" : "",
+        "currCoinsOnCard": 0,
+        "excludedCards" : [32,25,23,24,22,21,11,5,16],
+        "hasGameStarted" : false
+    }

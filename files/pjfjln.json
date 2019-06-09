@@ -1,0 +1,7 @@
+
+    {
+        "cards" : [Array],
+        "currPlayer" : "helloThere",
+        "currCoinsOnCard": 0,
+        "excludedCards" : [Array]
+    }

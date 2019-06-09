@@ -1,0 +1,7 @@
+
+    {
+        "cards" : [],
+        "currPlayer" : mastermind,
+        "currCoinsOnCard": 0,
+        "excludedCards" : []
+    }

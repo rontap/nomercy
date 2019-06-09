@@ -1,0 +1,116 @@
+<HTML>
+    <head>
+        <title>No Mercy | Start A Game</title>
+        <script type="text/javascript" src="../NXTJS/jsplus.js"></script>
+         <script type="text/javascript" src="../NXTJS/notifications.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+         <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../NXTJS/elements.css"  >
+        <link rel="stylesheet" href="./styles/style.css"  >
+        <link rel="stylesheet" href="./styles/room.css"  >
+      
+    </head>
+    <body class="toast-desktop">
+        <nav>
+            <span id="gamename">No Mercy</span>
+            <span id="sessionname">NEW game / join room</span>
+        </nav>
+        <br><br><br> <br><br><br>
+        
+         
+        <holder>
+        
+        <h1><span d>Welcome to No mercy.</span><span a>About No Mercy Game</span><span b>Select A Mode</span></h1>
+        <h2><span d>Let's get started, shall we?</span><span a>Who created this thingy</span></h2>
+        
+        
+        
+        <content>
+            <br>
+                <input round class="input" id="username" placeholder="choose a nickname"  tabindex="-1">
+                <br><br>
+                <input round onclick="joinAnim()" id="joiner" value='Join a game' tabindex="-1">
+                <br>
+                <b id="orbtn">OR</b>
+                <br>
+                <input round onclick="preSend()" value="Create a new" id="sender"  tabindex="-1">
+            
+        </content>
+       
+        <about>
+            <card class="card" id="about">
+                <b>Created By</b>: Mate and Aron<br>
+                <b>Created In 2018 (Copyright)</b><br>
+                
+            </card>
+            
+            <br><br><br>
+            <button round style="margin-right:20px;">More Games...</button>
+            <button round>Home Site</button>
+        </about>
+        <div id="aboutText">
+            
+            v2 Beta / <u onclick="body.classList.toggle('about')">About</u>
+        </div>
+         </holder>
+        <div id="modeSelector">
+            <group>
+            <mode>
+                <div>Play in online with friends and family.</div>
+                <button round onclick="send()">Online Multi</button>
+            </mode>
+            <mode>
+                <div>Play with friends without a need for interet connection or multiple devices.</div>
+                <button round onclick="send()">Single-Device</button>
+            </mode>
+            <mode>
+                <div>Play against AI so you dont even need 'friends'</div>
+                <button round onclick="send()">Play Foreveralone</button>
+            </mode>
+            </group>
+        </div>
+        
+        <script>
+        function showModes() {
+            $('body').classList.add('modeSelect');
+        }
+            joinType = "new"
+            autoJoin = false
+            id = null
+            function preSend() {
+                if (joinType == "new")   $('body').classList.add('modeSelect');
+                else send();
+            }
+            function send() {
+                
+          
+                window.location = `https://team-autism-rontap.c9users.io/nomercy/room.php?action=${joinType}&gameID=${autoJoin ? id : joiner.value.toLowerCase()}&name=${username.value}&cards=${cards.shuffle()}`
+            }
+            function joinAnim() {
+                joiner.classList.add('input');
+                joiner.contenteditable = true;
+                joiner.value="";
+                joiner.disabled=false
+                joiner.placeholder="enter game ID"
+                orbtn.style.opacity=0
+                sender.value="Join Game"
+                joinType = "join"
+            }
+              
+            if (location.hash.length >2 && location.hash.indexOf('!') == -1) {
+                joinType = "join"
+                autoJoin = true;
+                id=location.hash.slice(1)
+                orbtn.style.opacity=0
+                sender.style.opacity=0
+                joiner.onclick=function(){send()}
+                
+            }
+            if (location.hash == '#!invalid-room-name') nxt.notify(8000,'Couldn\'t find a room with that id.')
+            
+        </script>
+       
+    </body>
+</HTML>

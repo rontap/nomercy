@@ -1,0 +1,8 @@
+
+    {
+        "cards" : [19,32,12,25,9,7,23,35,17,22,11,4,8,10,24,5,14,29,31,21,33,13,34,15],
+        "currPlayer" : "&#9733;Sipos elvtárs&#9733;",
+        "currCoinsOnCard": 0,
+        "excludedCards" : [30,18,20,28,3,6,26,27,16],
+        "hasGameStarted" : false
+    }

@@ -1,0 +1,8 @@
+
+    {
+        "cards" : [26,33,4,23,29,34,9,35,21,17,16,28,13,3,11,14,19,8,20,6,10,24,5,22],
+        "currPlayer" : "ProKiller57",
+        "currCoinsOnCard": 0,
+        "excludedCards" : [15,32,27,18,31,7,12,25,30],
+        "hasGameStarted" : false
+    }

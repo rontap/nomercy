@@ -1,0 +1,8 @@
+
+    {
+        "cards" : [8,5,33,29,32,4,23,13,14,15,20,27,16,10,25,21,22,31,3,28,12,30,19,34],
+        "currPlayer" : "rontap",
+        "currCoinsOnCard": 0,
+        "excludedCards" : [11,6,18,24,17,26,35,9,7],
+        "hasGameStarted" : false
+    }

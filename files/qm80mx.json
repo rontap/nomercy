@@ -1,0 +1,8 @@
+
+    {
+        "cards" : [24,19,4,33,34,17,12,35,27,7,6,23,5,8,26,11,9,32,10,18,15,31,29,16],
+        "currPlayer" : "ceca",
+        "currCoinsOnCard": 0,
+        "excludedCards" : [30,13,28,14,20,25,3,22,21],
+        "hasGameStarted" : false
+    }

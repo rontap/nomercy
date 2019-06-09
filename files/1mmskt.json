@@ -1,0 +1,8 @@
+
+    {
+        "cards" : [19,4,14,3,17,15,18,25,11,12,21,8,26,23,20,16,24,22,5,13,35,34,6,30],
+        "currPlayer" : "zsalinovka",
+        "currCoinsOnCard": 0,
+        "excludedCards" : [33,9,27,7,28,32,31,29,10],
+        "hasGameStarted" : false
+    }

@@ -1,0 +1,7 @@
+
+    {
+        "cards" : [],
+        "currPlayer" : "df",
+        "currCoinsOnCard": 0,
+        "excludedCards" : []
+    }
